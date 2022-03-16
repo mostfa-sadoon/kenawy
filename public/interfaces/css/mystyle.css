@@ -1,0 +1,160 @@
+/******************body css******************/
+body{
+    background-color: rgb(46, 45, 45);
+    font-family: 'Inconsolata', monospace;
+}
+/****************start navbar*********************/
+.navbar{
+    background-color: rgb(230 230 230/ 80%) !important;
+    color: #b6b7b7 !important;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    width: 100%;
+}
+nav ul li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-family: "Lato";
+    color: #ecf0f1;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }  
+  nav ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #ff7000;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+  } 
+  nav ul li a:hover {
+    color: #95a5a6;
+  }
+ nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+/****************end navbar*********************/
+.welcome p{
+    color:#beaf90;
+    font-size:25px;
+ }
+/**************start css img***********************/
+.item img{
+transition: all 1s;  
+}
+.item:hover img{
+transform: scale(1.2);
+}
+.group{
+    background-image:url("imgs/Picture\ 9..jpg");
+    height: 550px;
+}
+.content{
+    margin-top: 130px;
+}
+.content h3{
+    font-size: 40px;
+    color: rgb(219, 216, 205);
+    font-weight: bold;
+}
+.content p{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(219, 216, 205);
+   
+}
+.content_2{
+    margin-top: 100px;
+}
+.content_2 h3{
+    font-size: 40px;
+    color: #beaf90;
+    font-weight: bold;
+}
+.content_2 p{
+    font-size: 25px;
+    font-weight: bold;
+    color:#beaf90;
+}
+.footer{
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color:white;
+}
+
+/**********************img*********************/
+.member{
+    text-align: center;
+    border:3px solid #fff;
+    color: #fff;
+    position: relative;
+    overflow: hidden
+}
+.member img{
+   
+    transition: all 1s;
+    transition-delay: 1s
+}
+.member .caption{
+    background-color: rgba(42, 63, 85, 0.459);
+    height: 100%;
+    width:100%;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+.member:hover .caption{
+   opacity: 1;
+   transform: rotate(360deg)
+}
+.member:hover img{
+    transform: scale(1.2,1.2)
+}
+.caption h2{
+    background-color: #2a3f55;
+    margin-top: 0;
+    padding: 12px;
+    position: relative;
+    left: 100%;
+    transition: all 1s;
+    transition-delay: 2s
+}
+.member:hover .caption h2,.member:hover .caption p{
+    left: 0
+}
+.caption p{
+    font-size: 18px;
+    padding: 20px;
+    position: relative;
+    left: 100%;
+    transition: all 1s;
+    transition-delay: 2.5s
+}
+/*****************connect us*******************/
+.connect-us{
+    background-color: rgb(178 176 182);
+}
+
+.content-icon{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.content-icon a{
+   font-size: 30px;
+}
+.content-info p{
+    margin-top: 25px;
+    font-size: 16px;
+    color:aliceblue;
+    font-weight: bold;
+}

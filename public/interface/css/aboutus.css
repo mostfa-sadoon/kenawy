@@ -1,0 +1,429 @@
+/******************body css******************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b2e34;
+    /* font-family: 'Inconsolata', monospace; */
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffc451;
+}
+
+p {
+    color: #fff;
+    text-align: justify;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+.main-color {
+    color: #ffc451;
+}
+
+.primary-color {
+    color: #2b2e34;
+}
+
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
+}
+
+
+/****************start navbar*********************/
+
+.navbar {
+    /* background-color: rgb(0 0 0/ 80%) !important; */
+    color: #2b2e34 !important;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    width: 100%;
+}
+
+.my_collaps {
+    background-color: #ffc451 !important;
+}
+
+.nav-item .nav-link {
+    color: #2b2e34 !important;
+}
+
+.nav-item .nav-link:hover {
+    color: #ffc451 !important;
+}
+
+nav ul li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-family: "Lato";
+    color: #2b2e34 !important;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #ffc451;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+nav ul li a:hover {
+    color: #95a5a6;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/*End nav*/
+
+
+/**cover*/
+
+.cover {
+    background-color: #2b2e34;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    height: 300px;
+    width: 100%;
+}
+
+.overlay {
+    background: rgba(49, 55, 61, .7);
+    width: 100%;
+    height: 100%;
+}
+
+.cover img {
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+    display: block;
+    filter: grayscale(.7);
+}
+
+.cover .section-title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Start Content*/
+
+.content {
+    margin-top: 50px;
+}
+
+.content h3 {
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+    color: rgb(219, 216, 205);
+}
+
+.content h3 {
+    font-size: 40px;
+    color: rgb(219, 216, 205);
+    font-weight: bold;
+}
+
+.welcome p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about img {
+    height: 350px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .about .long-traditional img {
+        width: 100%;
+    }
+}
+/*End Content*/
+
+
+/*Start Our Products*/
+
+.section-title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    /* color: white; */
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+
+/*End Our Products*/
+
+.item img {
+    transition: all 1s;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.caption {
+    background-color: rgba(42, 63, 85, 0.459);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.member {
+    text-align: center;
+    border: 2px solid #fff;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    /* width: 23%; */
+    /* margin-left: 1%;
+    margin-right: 1%; */
+}
+
+.member img {
+    transition: all 1s;
+    transition-delay: 1s
+}
+
+.member .caption {
+    background-color: rgba(42, 63, 85, 0.226);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.member:hover .caption {
+    opacity: 1;
+    transform: rotate(360deg)
+}
+
+.member:hover img {
+    transform: scale(1.2, 1.2)
+}
+
+.caption h2 {
+    background-color: #2a3f5588;
+    margin-top: 0;
+    padding: 12px;
+    position: relative;
+    left: 100%;
+    transition: all 1s;
+    transition-delay: 2s
+}
+
+.member:hover .caption h2,
+.member:hover .caption p {
+    left: 0
+}
+
+.caption p {
+    font-size: 18px;
+    padding: 20px;
+    position: relative;
+    left: 100%;
+    transition: all 1s;
+    transition-delay: 2.5s
+}
+
+
+/*Start Mission*/
+
+.mission span {
+    /* width: 100px;
+    height: 100px; */
+    color: #ffc451;
+}
+
+.mission i {
+    color: #ffc451;
+    width: 100px;
+    height: 100px;
+    line-height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(180, 180, 180);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    padding: 10px;
+}
+
+.mission i:hover {
+    color: #000;
+    background-color: #ffc451;
+    border: none;
+}
+
+.mission span {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .mission .long-traditional img {
+        width: 100%;
+        background-color: brown;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mission .long-traditional img {
+        width: 100%;
+    }
+}
+/*End Mission*/
+
+
+/*Start Why Choose Us*/
+
+.why-choose-us .row i {
+    color: #ffc451;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    border: 1px solid rgb(180, 180, 180);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.why-choose-us .row i:hover {
+    color: #000;
+    background-color: #ffc451;
+    border: none;
+}
+
+.why-choose-us .row h6 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/*End Why Choose Us*/
+
+
+/********************Start Material page******************************/
+
+
+/*Start stone types*/
+
+.material-page img {
+    width: 100%;
+}
+
+.stone-types img {
+    width: 100%;
+    height: 250px;
+}
+
+
+/*End stone types*/
+
+
+/*Start implementations*/
+
+.implementations img {
+    width: 100%;
+    height: 250px;
+}
+
+
+/*End implementations*/
+
+
+/********************End Material page******************************/
+
+
+/*Start Footer*/
+
+footer {
+    margin-top: 100px;
+    color: white;
+    font-size: 14px;
+}
+
+.social a:hover {
+    background-color: #d6a545 !important;
+    border: none;
+    /* color: #d6a545 !important; */
+}
+
+footer .copy-right {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/*End Footer*/

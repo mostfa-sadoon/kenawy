@@ -1,0 +1,71 @@
+.content img {
+    transition: all 1s;
+}
+
+.conect:hover img {
+    transform: scale(1.2);
+}
+
+.content h3 {
+    font-size: 25px;
+    /* margin-top: 25px; */
+    font-weight: bold;
+    color: rgb(219, 216, 205);
+}
+
+
+/*Start Our Products*/
+
+.section-title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: white;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #d6a545;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+
+/*End Our Products*/
+
+
+/*Start Footer*/
+
+.footer {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.social a:hover {
+    background-color: #d6a545 !important;
+    border: none;
+    /* color: #d6a545 !important; */
+}
+
+
+/*End Footer*/

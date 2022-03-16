@@ -1,0 +1,13 @@
+.content img{
+transition: all 1s;  
+}
+.conect:hover img{
+transform: scale(1.2);
+}
+.content h3{
+    font-size: 25px;
+    margin-top: 25px    ;
+    font-weight: bold;
+    color: rgb(219, 216, 205);
+  }
+ 
